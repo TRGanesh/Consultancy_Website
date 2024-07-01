@@ -1,0 +1,153 @@
+/* Navbar */
+.navbar-custom {
+   background-color: transparent; /* Transparent background */
+   position: absolute; /* Position at the top */
+   width: 100%;
+   z-index: 1000; /* Ensure it's above the image and overlay */
+}
+
+/* Hero Image Container */
+.hero-container {
+   position: relative; /* Ensure positioning context for children */
+}
+
+/* Hero Image */
+.hero-image {
+   position: relative;
+   overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.hero-image img {
+   width: 100%; /* Ensure image covers the container */
+   vertical-align: middle;
+}
+
+/* Overlay */
+.overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+   z-index: 500; /* Ensure it's above the image */
+}
+
+/* Hero Text */
+.hero-text {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   color: white;
+   z-index: 1000; /* Ensure text is above the overlay */
+}
+
+.hero-text h1 {
+   font-size: 3.5rem;
+   font-weight: bold;
+}
+
+.hero-text p {
+   font-size: 1.5rem;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+   color: rgb(240, 238, 238) !important; /* White color for links */
+   font-size: 1.2rem;
+   margin-right: 20px;
+   transition: color 0.3s; /* Smooth transition for color change */
+
+}
+
+/* Hover Effect */
+.navbar-nav .nav-link:hover {
+   color: #ffc107 !important; /* Change to your desired hover color */
+}
+
+/* Hire Us For Section */
+.card {
+   background-color: #e5f5cc;
+   border-radius: 20px;
+   /* padding: 20px; */
+}
+
+.card-title {
+   font-size: 1.5rem;
+   font-weight: bold;
+   color: #014d9d;
+}
+
+.card-body {
+   padding: 1.5rem;
+}
+
+h5.design-heading,
+h5.webDevelopment-heading,
+h5.marketing-heading,
+h5.ml-heading,
+h5.da-heading
+{
+   font-family: 'Georgia', sans-serif; 
+}
+
+/* Custom color for About Us heading */
+h2.about-heading {
+   color: #333; 
+}
+
+/* Custom color for Mission and Vision headings */
+h3.mission-heading,
+h3.vision-heading {
+   color: #014d9d; 
+}
+
+
+/* Custom background color for About Us section */
+.custom-background {
+   background-color: #f0f0f0; 
+}
+
+/* About Us Section */
+.about-text {
+   padding: 20px; /* Adjust padding as needed */
+}
+
+.about-image-wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%; /* Ensure wrapper fills the height of the column */
+}
+
+.about-image-wrapper img {
+   max-width: 100%; /* Ensure image does not exceed container width */
+   max-height: 100%; /* Ensure image does not exceed container height */
+   object-fit: contain; /* Maintain aspect ratio while fitting inside the container */
+}
+
+/* Apply custom font family for Headings*/
+h2.about-heading,
+h2.why-choose-heading,
+h3.mission-heading,
+h3.vision-heading,
+h2.haveAProject-heading,
+h2.hire-us-for-heading {
+    font-family: 'Georgia', sans-serif; 
+}
+
+/* Apply custom font family to the entire website */
+body {
+   font-family: 'Times New Roman', sans-serif; 
+   background-color: #f5e5ce; 
+}
+
+
+/* Footer */
+.footer {
+   background-color: #f8f9fa;
+   padding: 1rem 0;
+   text-align: center;
+}
