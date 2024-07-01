@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <!-- 
+      Above line imports the Font Awesome icon library from a CDN (Content Delivery Network). Font Awesome provides scalable vector icons that can be easily customized with CSS.
+    -->
+  </head>
+  <body> <!-- Visible Content  -->
+    <div class="container">
+    
+      <div class="form"> <!-- Contact Form -->
+        <!-- Mentioning Our Details -->
+        <div class="contact-info"> 
+          <h3 class="title">Let's get in touch</h3>
+          <hr class="line"> <!-- Horizontal line -->
+          <p class="text">
+            Some text
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="img/location_1.png" class="icon" alt="" />
+              <p>Address</p>
+            </div>
+            <div class="information">
+              <img src="img/mail_1.png" class="icon" alt="" />
+              <p>Our Mail</p>
+            </div>
+            <div class="information">
+              <img src="img/phone_1.png" class="icon" alt="" />
+              <p>Our Phone Number</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <!-- We have to mention our Social Media Links -->
+              <a href="#" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter" target="_blank"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram" target="_blank"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in" target="_blank"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          
+          <form action="index.html" autocomplete="off">
+            <!-- "action" specifies URL of file where form data will be submitted. -->
+            <!-- autocomplete="off" -- Used to disable browser autofill for the form fields. -->
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script> 
+  </body>
+</html>
